@@ -12,14 +12,8 @@ define test_novae = Character("Novae", color="aafffc")
 
 define test_aelita = Character("Aelita", color = "FF0000")
 
-#Assume all important comments were previously defined
-
+# Storage for the flags for all the important comments the player has marked.
 define important_comments = {}
-
-
-init python:
-    def make_important_comment(str):
-        renpy.say(test_novae, "test function")
 
 # The game starts here.
 
@@ -38,12 +32,6 @@ label start:
     
 
     # These display lines of dialogue.
-    
-    # To remember how to do this
-    #python: 
-    #    important_comments["busy day"] = True
-    #    val = "hello" in important_comments
-    #    renpy.say(test_novae, "[val]")
 
     ###### TEST CONVERSATION ########
 
@@ -72,17 +60,31 @@ label start:
 
     test_novae "Or at least, it used to be"
 
-    $ make_important_comment("hello")
+    # Uncomment this line to make it so we found the third-option.
+    # $ important_comments["third-option"] = True
 
-    #make_important_comment("it used to be")
-    
-   
-    #if "it used to be" in important_comments:
-        
-    
+    menu:
+        "Option 1":
+            jump test_option1
+        "Option 2":
+            jump test_option2
+        "Option 3" if "third-option" in important_comments:
+            jump test_option3
 
     # This ends the game.
 
+    jump test
+
+label test_option1:
+    "You selected option 1."
+    jump test
+
+label test_option2:
+    "You selected option 2."
+    jump test
+
+label test_option3:
+    "You selected option 3."
     jump test
 
 label test:
