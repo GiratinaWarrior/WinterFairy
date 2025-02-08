@@ -33,3 +33,6 @@ files.txt
 # Backups 
 *.rpyb
 *.bak
+
+# local excludes
+.vscode
