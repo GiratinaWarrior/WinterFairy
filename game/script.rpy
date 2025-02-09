@@ -42,6 +42,7 @@ screen make_important_comment(str):
 # declarations of images, images have Normal appended to them by convention to indicate
 # the emotion they signifiy
 image mc = "MC_Sketch.png"
+image mc neutral = "MC_Sketch_Neutral_Talking.png"
 image mc angry = "MC_Sketch_Angry.png"
 image mc annoyed = "MC_Sketch_Annoyed.png"
 image mc eyes_closed = "MC_Sketch_Eyes_Closed.png"
@@ -49,11 +50,20 @@ image mc happy = "MC_Sketch_Happy.png"
 image mc sheepish = "MC_Sketch_Sheepish.png"
 
 image other = "Blizzard_Fairy_Sketch.png"
+image other neutral = "Blizzard_Fairy_Sketch_Neutral_Talking.png"
 image other angry = "Blizzard_Fairy_Sketch_Angry.png"
 image other furious = "Blizzard_Fairy_Sketch_Furious.png"
 
 image boss = "Queen_Sketch.png"
+image boss neutral = "Queen_Sketch_Neutral_Talking.png"
+image boss serious = "Queen_Sketch_Serious.png"
+image boss angry = "Queen_Sketch_Angry.png"
 image wife = "Wife_Sketch.png"
+image wife neutral = "Wife_Sketch_Neutral.png"
+image wife serious = "Wife_Sketch_Serious.png"
+image wife happy = "Wife_Sketch_Happy.png"
+image wife concerned = "Wife_Sketch_Concerned.png"
+image wife conflicted = "Wife_Sketch_Conflicted.png"
 
 image throneroom = "Throne_Room_Flat_Colour.png"
 image office = "Office_Sketch.png"
