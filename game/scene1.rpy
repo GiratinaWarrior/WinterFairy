@@ -33,18 +33,17 @@ label s1_start:
 label s1_catfight:
     
     other "But it is our greatest Long Night tradition."
+    show mc happy
     mc "Along with the treats at home."
     other "That isn't the work of the court."
+    show mc
     mc "It is a tradition of us - the members of the court."
-    
     show other angry
-    
     other "The winter weather is our main duty, we don't need to just stay at home and eat treats!"
-    
-    show mc angry
-    
+    show mc annoyed
     mc "Is working to the bone any better?"
     other "It's Long Night! The most important night of the year!"
+    show mc neutral
     mc "How does that make it any better?"
     other "How did you become an advisor? Every interesting call you make is just to do work less!"
     mc "That isn't even- And your call, don't make interesting calls, is better?"

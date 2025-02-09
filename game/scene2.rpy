@@ -11,7 +11,7 @@ label s2_start:
     
     play music "gamejam_2025_w_home.ogg"
     
-    show mc:
+    show mc eyes_closed:
         xcenter 0.25
     with dissolve
     mc "You would not believe what happened with Alyssa!"
@@ -66,9 +66,11 @@ label s2_main:
     wife "Would you like to rant a bit more?"
     mc "I got it out, we can move on."
     wife "Then, to sorting this out."
+    show mc sheepish
     mc "Am I going to have to apologize to Alyssa?"
     wife "Even though I am not her biggest fan either, eventually you are both going to have to apologize to each other."
     wife "But what are you doing about the weather on Long Night?"
+    show mc
     mc "I suppose we are still on a clear night, but Alyssa probably isn't done trying to change that."
     wife "Are you going to try and convince her not to?"
     mc "That is hard, we know what the difference is here. There is no surprise information about weather we are missing."
@@ -82,16 +84,22 @@ label s2_main:
     mc "I just don't want another year where the celebrations can't start until people get back from brewing a storm."
     mc "But it seems that Alyssa is happy to do that."
     wife "That does sound like her."
+    show mc eyes_closed
     mc "I don't know how to convince her."
     wife "You are going to have to try though, it is your responsibility."
+    show mc
     mc "And if it doesn't work?"
     wife "Isn't this your decision, unless the queen decides to step in."
+    show mc sheepish
     mc "I didn't talk to the queen."
     mc "I should go tell her what happened."
     mc "Maybe she can patch this up."
+    show wife happy
     wife "That would be nice."
     mc "Thanks for talking to me about it."
+    show mc happy
     mc "Bye love."
+    show wife
     wife "Take care, my snowflake."
 
     scene black with dissolve
