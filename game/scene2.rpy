@@ -16,14 +16,23 @@ label s2_start:
     with dissolve
     mc "You would not believe what happened with Alyssa!"
     wife "Oh dear."
+    show mc annoyed
     mc "She barged in and insisted that we do a blizzard for Long Night!"
+    show wife concerned
     wife "And you wanted to let it be a clear night this year."
     mc "But no, let's work to the bone again this year, just to have a fancy blizzard!"
+    show mc neutral
+    show wife conflicted
     wife "Did she try to give better reasons for it?"
+    show mc eyes_closed
     mc "Tradition, as always. Ignoring the realities of what we are doing."
+    show wife conflicted
     wife "What did she actually say?"
+    show mc angry
     mc "Just that I am lazy all the time and want to slack off!"
+    show wife serious
     wife "My dearest snowflake, please focus."
+    show mc
     jump s2_tutorial
 
 label s2_tutorial:

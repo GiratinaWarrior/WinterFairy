@@ -11,7 +11,7 @@ define mc = Character("Sylive", color="3F718D")
 
 define other = Character("Alyssa", color = "7377DC")
 
-define boss = Character("Maeve")
+define boss = Character("Queen Maeve")
 
 define wife = Character("Lyra")
 
@@ -55,6 +55,7 @@ image other angry = "Blizzard_Fairy_Sketch_Angry.png"
 image other furious = "Blizzard_Fairy_Sketch_Furious.png"
 
 image boss = "Queen_Sketch.png"
+<<<<<<< Updated upstream
 image boss neutral = "Queen_Sketch_Neutral_Talking.png"
 image boss serious = "Queen_Sketch_Serious.png"
 image boss angry = "Queen_Sketch_Angry.png"
@@ -64,6 +65,15 @@ image wife serious = "Wife_Sketch_Serious.png"
 image wife happy = "Wife_Sketch_Happy.png"
 image wife concerned = "Wife_Sketch_Concerned.png"
 image wife conflicted = "Wife_Sketch_Conflicted.png"
+=======
+image boss angry = "Queen_Sketch_Angry.png"
+image boss serious = "Queen_Sketch_Serious.png"
+
+image wife = "Wife_Sketch.png"
+image wife concerned = "Wife_Sketch_Concerned.png"
+image wife conflicted = "Wife_Sketch_Conflicted.png"
+image wife serious = "Wife_Sketch_Serious.png"
+>>>>>>> Stashed changes
 
 image throneroom = "Throne_Room_Flat_Colour.png"
 image office = "Office_Sketch.png"
