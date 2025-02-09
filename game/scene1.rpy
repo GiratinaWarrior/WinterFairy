@@ -1,6 +1,8 @@
 # Scene 1: Intro + Catfight
 
 label s1_start:
+    play music "gamejam_2025_w_winter1.ogg"
+    
     "Welcome to the Court of Winter Fairies!"
     "My name is (Clear), and I am a advisor to the Winter Queen."
     "I have various duties, but the one important to this story is coordinating the winter weather."
