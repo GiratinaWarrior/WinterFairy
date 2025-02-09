@@ -1,6 +1,8 @@
 # Scene 2: Vent at Home
 
 label s2_start:
+    scene bedroom
+
     wife "You are back early?"
     mc "You would not believe what happened with (Blizzard)!"
     wife "Oh dear."

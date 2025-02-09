@@ -45,6 +45,11 @@ image mc = "MC_Sketch.png"
 image other = "Blizzard_Fairy_Sketch.png"
 image boss = "Queen_Sketch.png"
 
+image throneroom = "Throne_Room_Flat_Colour.png"
+image office = "Office_Sketch.png"
+image bedroom = "Bedroom_Sketch.png"
+image black = "black.png"
+
 label start:
 
     jump s1_start

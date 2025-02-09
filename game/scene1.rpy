@@ -1,9 +1,7 @@
 # Scene 1: Intro + Catfight
 
-image throneroom = "Throne_Room_Flat_Colour.png"
-
 label s1_start:
-    scene throneroom
+    scene office
     
     play music "gamejam_2025_w_winter1.ogg"
     
@@ -49,6 +47,9 @@ label s1_catfight:
 
     hide mc with dissolve
     hide other with dissolve
+
+    scene black 
+    with dissolve(3)
     
     "..."
     "It got even less polite after that."
