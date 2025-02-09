@@ -57,5 +57,4 @@ label s1_catfight:
     jump s1_end
 
 label s1_end:
-    # Current end of game.
-    jump test
+    jump s2_start
