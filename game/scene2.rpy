@@ -2,8 +2,15 @@
 
 label s2_start:
     scene bedroom
-
+    
+    play music "gamejam_2025_w_home.ogg"
+    
+    show wife at flip:
+        xcenter 0.75
     wife "You are back early?"
+    show mc:
+        xcenter 0.25
+    with dissolve
     mc "You would not believe what happened with (Blizzard)!"
     wife "Oh dear."
     mc "She barged in and insisted that we do a blizzard for Long Night!"

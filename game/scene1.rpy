@@ -42,14 +42,19 @@ label s1_catfight:
     mc "That isn't even- And your call, don't make interesting calls, is better?"
     other "Is respecting tradition supposed to be boring!"
     mc "Never changing is boring!"
+    show other:
+        xcenter 0.65
+    with move
     other "You crazy upstart!"
+    show mc:
+        xcenter 0.35
+    with move
     mc "You old hag!"
 
-    hide mc with dissolve
-    hide other with dissolve
-
     scene black 
-    with dissolve(3)
+    with Dissolve(1.0)
+    
+    stop music fadeout 1.0
     
     "..."
     "It got even less polite after that."

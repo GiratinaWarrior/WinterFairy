@@ -44,11 +44,15 @@ screen make_important_comment(str):
 image mc = "MC_Sketch.png"
 image other = "Blizzard_Fairy_Sketch.png"
 image boss = "Queen_Sketch.png"
+image wife = "Wife_Sketch.png"
 
 image throneroom = "Throne_Room_Flat_Colour.png"
 image office = "Office_Sketch.png"
 image bedroom = "Bedroom_Sketch.png"
 image black = "black.png"
+
+transform flip:
+    xzoom -1.0
 
 label start:
 
