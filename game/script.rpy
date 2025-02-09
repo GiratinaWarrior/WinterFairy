@@ -6,16 +6,30 @@ define config.history_current_dialogue = True
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen", color="aafffc")
 
-define test_novae = Character("Novae", color="aafffc")
+define mc = Character("Clear Fairy", color="aafffc")
 
-define test_aelita = Character("Aelita", color = "FF0000")
+define other = Character("Blizzard Fairy", color = "FF0000")
+
+define boss = Character("Boss Fairy")
+
+define wife = Character("Clear's Wife")
+
+define otherwife = Character("OtherWife")
 
 # Storage for the flags for all the important comments the player has marked.
 define important_comments = {}
 
 # The game starts here.
+
+init python:
+    def mark_important(str):
+        #renpy.say(test_aelita, "bruh")
+        important_comments[str] = True
+
+screen make_important_comment(str):
+    key 'K_x' action Function(mark_important, str)
+
 
 label start:
 
@@ -42,33 +56,34 @@ label start:
 
     show nov normal
 
-    test_novae "Hello, and welcome to the Winter Fairy Court"
+    mc "Hello, and welcome to the Winter Fairy Court"
 
-    test_novae "I'm Novae"
+    mc "I'm Novae HEYYYYYYYYYYY"
 
     hide nov normal
 
     show ael normal
 
-    test_aelita "And I'm Aelita"
+    other "And I'm Aelita"
 
     hide ael normal
 
     show nov normal
     
-    test_novae "Winter Fairy Court is a peaceful place to live!"
+    mc "Winter Fairy Court is a peaceful place to live!"
 
-    test_novae "Or at least, it used to be"
+    define NewOption = "third-option"
 
-    # Uncomment this line to make it so we found the third-option.
-    # $ important_comments["third-option"] = True
+    show screen make_important_comment(NewOption)
+
+    mc "Or at least, it used to be"
 
     menu:
         "Option 1":
             jump test_option1
         "Option 2":
             jump test_option2
-        "Option 3" if "third-option" in important_comments:
+        "Option 3" if NewOption in important_comments:
             jump test_option3
 
     # This ends the game.
