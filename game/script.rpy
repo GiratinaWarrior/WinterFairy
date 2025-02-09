@@ -22,69 +22,61 @@ define important_comments = {}
 
 # The game starts here.
 
+# mark_important(str) takes an arbitrary string and maps it to True on important_comments
 init python:
     def mark_important(str):
         #renpy.say(test_aelita, "bruh")
         important_comments[str] = True
 
+# make_important_comment(str) is a screen that display a prompting overlay
+# indiciating that the X key (or any chosen key) can be pressed to continue
+# a conversation based on the last thing a character just said
+# used for when a character says something insightful that may give more information
 screen make_important_comment(str):
     key 'K_x' action Function(mark_important, str)
+    imagebutton:
+        auto "EmptyButton_%s.png"
 
+# Images
+
+# declarations of images, images have Normal appended to them by convention to indicate
+# the emotion they signifiy
+image mc = "MC_Sketch.png"
+image other = "Blizzard_Fairy_Sketch.png"
+image boss = "Queen_Sketch.png"
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
+    # display the background, can be changed at any point
     scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
+    show mc at left
+    with dissolve
+
+    mc "Testing testing. Clear Fairy Testing"
+
+    show other at right
+    with dissolve
+
+    other "Blizzard Fairy Testing. 1 2 3 4 5."
     
+    show boss
+    with dissolve
 
-    # These display lines of dialogue.
-
-    ###### TEST CONVERSATION ########
-
-    # Detect whether a comment that was capture is part of the list of important comments
-    # make the function make_important_comment(str)
-    # make_important_comment(str) takes a phrase and will remember that phrase
-    # as something important
-
-    show nov normal
-
-    mc "Hello, and welcome to the Winter Fairy Court"
-
-    mc "I'm Novae HEYYYYYYYYYYY"
-
-    hide nov normal
-
-    show ael normal
-
-    other "And I'm Aelita"
-
-    hide ael normal
-
-    show nov normal
-    
-    mc "Winter Fairy Court is a peaceful place to live!"
-
-    define NewOption = "third-option"
+    define NewOption = "Winter Solstice"
 
     show screen make_important_comment(NewOption)
 
-    mc "Or at least, it used to be"
+    other "A wonderous blizzard"
+
+    hide screen make_important_comment
 
     menu:
-        "Option 1":
+        "Indeed, it shalt be a clear day" :
             jump test_option1
-        "Option 2":
+        "A wonderous what now?" if NewOption in important_comments:
             jump test_option2
-        "Option 3" if NewOption in important_comments:
-            jump test_option3
 
     # This ends the game.
 
@@ -96,13 +88,8 @@ label test_option1:
 
 label test_option2:
     "You selected option 2."
-    jump test
-
-label test_option3:
-    "You selected option 3."
-    jump test
+    jump s1_start
 
 label test:
-    # This ends the game.
-    return
 
+    return
