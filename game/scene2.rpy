@@ -3,11 +3,14 @@
 label s2_start:
     scene bedroom
     
-    play music "gamejam_2025_w_home.ogg"
+    play sound "door_sf.ogg"
     
     show wife at flip:
         xcenter 0.75
     wife "You are back early?"
+    
+    play music "gamejam_2025_w_home.ogg"
+    
     show mc:
         xcenter 0.25
     with dissolve
