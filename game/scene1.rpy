@@ -24,8 +24,10 @@ label s1_start:
     other "Yes, I was looking at your notes about the upcoming weather plans."
     mc "Go on."
     other "And there is nothing about the weather for Long Night?"
+    show mc annoyed
     mc "I didn't forget if that is what you are asking."
     other "What about the Long Night blizzard?"
+    show mc
     mc "I was planning on just letting that night be clear. Have an easy day for everyone."
 
     jump s1_catfight
