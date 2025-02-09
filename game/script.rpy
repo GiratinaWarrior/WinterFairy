@@ -55,17 +55,17 @@ image other angry = "Blizzard_Fairy_Sketch_Angry.png"
 image other furious = "Blizzard_Fairy_Sketch_Furious.png"
 
 image boss = "Queen_Sketch.png"
-<<<<<<< Updated upstream
 image boss neutral = "Queen_Sketch_Neutral_Talking.png"
 image boss serious = "Queen_Sketch_Serious.png"
 image boss angry = "Queen_Sketch_Angry.png"
+
 image wife = "Wife_Sketch.png"
 image wife neutral = "Wife_Sketch_Neutral.png"
 image wife serious = "Wife_Sketch_Serious.png"
 image wife happy = "Wife_Sketch_Happy.png"
 image wife concerned = "Wife_Sketch_Concerned.png"
 image wife conflicted = "Wife_Sketch_Conflicted.png"
-=======
+
 image boss angry = "Queen_Sketch_Angry.png"
 image boss serious = "Queen_Sketch_Serious.png"
 
@@ -73,7 +73,6 @@ image wife = "Wife_Sketch.png"
 image wife concerned = "Wife_Sketch_Concerned.png"
 image wife conflicted = "Wife_Sketch_Conflicted.png"
 image wife serious = "Wife_Sketch_Serious.png"
->>>>>>> Stashed changes
 
 image throneroom = "Throne_Room_Flat_Colour.png"
 image office = "Office_Sketch.png"
