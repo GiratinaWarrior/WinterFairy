@@ -1,7 +1,6 @@
 # Scene 3: Boss Visit
 
 label s3_start:
-
     scene black 
     stop music
     play sound "fanfare.ogg"
@@ -9,10 +8,10 @@ label s3_start:
     scene throneroom
     with Dissolve(1.0)
 
-    mc "Honer to the Heart of Winter, Queen of the Court of Winter Fairies. I humbly request an audience."
+    mc "Honer to the Heart of Winter, Queen Maeve of the Court of Winter Fairies. I humbly request an audience."
     boss "I grant your request and invite you to the frost thrown."
     boss "Yet, I have more than an inkling of why you are here."
-    mc "I suppose you already heard about the disagreement between (Blizzard) and me."
+    mc "I suppose you already heard about the disagreement between Alyssa and me."
     boss "Indeed I do know of it."
     boss "I have already reflected on the matter and have come to a decision."
     mc "Already? I was expecting- Very well."

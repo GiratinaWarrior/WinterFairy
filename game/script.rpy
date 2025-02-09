@@ -7,15 +7,15 @@ define config.history_current_dialogue = True
 # name of the character.
 
 
-define mc = Character("Clear Fairy", color="3F718D")
+define mc = Character("Sylive", color="3F718D")
 
-define other = Character("Blizzard Fairy", color = "7377DC")
+define other = Character("Alyssa", color = "7377DC")
 
-define boss = Character("Boss Fairy")
+define boss = Character("Maeve")
 
-define wife = Character("Clear's Wife")
+define wife = Character("Lyra")
 
-define otherwife = Character("OtherWife")
+define otherwife = Character("Viola")
 
 # Storage for the flags for all the important comments the player has marked.
 define important_comments = {}
