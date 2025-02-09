@@ -7,9 +7,9 @@ define config.history_current_dialogue = True
 # name of the character.
 
 
-define mc = Character("Clear Fairy", color="aafffc")
+define mc = Character("Clear Fairy", color="3F718D")
 
-define other = Character("Blizzard Fairy", color = "FF0000")
+define other = Character("Blizzard Fairy", color = "7377DC")
 
 define boss = Character("Boss Fairy")
 
@@ -47,8 +47,10 @@ image boss = "Queen_Sketch.png"
 
 label start:
 
+    jump s1_start
+
     # display the background, can be changed at any point
-    scene bg room
+    scene room
 
 
     show mc at left

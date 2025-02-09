@@ -1,6 +1,10 @@
 # Scene 1: Intro + Catfight
 
+image throneroom = "Throne_Room_Flat_Colour.png"
+
 label s1_start:
+    scene throneroom
+    
     play music "gamejam_2025_w_winter1.ogg"
     
     "Welcome to the Court of Winter Fairies!"
@@ -8,7 +12,15 @@ label s1_start:
     "I have various duties, but the one important to this story is coordinating the winter weather."
     "But, as you will learn, that duty is not mine alone."
 
+    show other:
+        xcenter 0.75
+    with dissolve
+        
     other "Hello, (Clear)."
+    show mc:
+        xcenter 0.25
+    with dissolve
+    
     mc "Hi, (Blizzard), I'm guessing you are visiting on business?"
     other "Yes, I was looking at your notes about the upcoming weather plans."
     mc "Go on."
@@ -35,6 +47,9 @@ label s1_catfight:
     other "You crazy upstart!"
     mc "You old hag!"
 
+    hide mc with dissolve
+    hide other with dissolve
+    
     "..."
     "It got even less polite after that."
     "(Blizzard) stormed out and I was too angry to get anything else done. So I decided to stop by home."
