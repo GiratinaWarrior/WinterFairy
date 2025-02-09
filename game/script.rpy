@@ -92,7 +92,7 @@ label start:
 
 label test_option1:
     "You selected option 1."
-    jump test
+    jump s1_start
 
 label test_option2:
     "You selected option 2."
@@ -103,26 +103,6 @@ label test_option3:
     jump test
 
 label test:
-
-    scene bg room
-
-    show ael normal 
-
-    define something = [
-                        ["Index One", False],
-                        ["Index Two", True]
-                        ]
-
-    #e "[something[0]]"
-
-    python:
-
-        for a in something:
-            txt = a[0]
-            renpy.say(e, "[txt]")
-
-        
-        
-
+    # This ends the game.
     return
 
