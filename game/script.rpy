@@ -7,7 +7,7 @@ define config.history_current_dialogue = True
 # name of the character.
 
 
-define mc = Character("Sylive", color="3F718D")
+define mc = Character("Sylvie", color="3F718D")
 
 define other = Character("Alyssa", color = "7377DC")
 

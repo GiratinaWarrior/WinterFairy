@@ -6,7 +6,7 @@ label s1_start:
     scene black
     
     "Welcome to the Court of Winter Fairies!"
-    "My name is Sylive, and I am a advisor to the Winter Queen."
+    "My name is Sylvie, and I am a advisor to the Winter Queen."
     "I have various duties, but the one important to this story is coordinating the winter weather."
     "But, as you will learn, that duty is not mine alone."
 
@@ -15,7 +15,7 @@ label s1_start:
         xcenter 0.75
     with dissolve
         
-    other "Hello, Sylive."
+    other "Hello, Sylvie."
     show mc:
         xcenter 0.25
     with dissolve
