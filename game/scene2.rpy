@@ -84,7 +84,9 @@ label s2_main:
     mc "Thanks for talking to me about it."
     mc "Bye love."
     wife "Take care, my snowflake."
+
+    scene black with dissolve
     jump s2_end
 
 label s2_end:
-    jump test
+    jump s3_start

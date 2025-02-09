@@ -42,13 +42,23 @@ screen make_important_comment(str):
 # declarations of images, images have Normal appended to them by convention to indicate
 # the emotion they signifiy
 image mc = "MC_Sketch.png"
+image mc angry = "MC_Sketch_Angry.png"
+image mc annoyed = "MC_Sketch_Annoyed.png"
+image mc eyes_closed = "MC_Sketch_Eyes_Closed.png"
+image mc happy = "MC_Sketch_Happy.png"
+image mc sheepish = "MC_Sketch_Sheepish.png"
+
 image other = "Blizzard_Fairy_Sketch.png"
+image other angry = "Blizzard_Fairy_Sketch_Angry.png"
+image other furious = "Blizzard_Fairy_Sketch_Furious.png"
+
 image boss = "Queen_Sketch.png"
 image wife = "Wife_Sketch.png"
 
 image throneroom = "Throne_Room_Flat_Colour.png"
 image office = "Office_Sketch.png"
 image bedroom = "Bedroom_Sketch.png"
+image outside = "Outside_Day.png"
 image black = "black.png"
 
 transform flip:

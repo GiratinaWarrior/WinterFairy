@@ -31,11 +31,18 @@ label s1_start:
     jump s1_catfight
 
 label s1_catfight:
+    
     other "But it is our greatest Long Night tradition."
     mc "Along with the treats at home."
     other "That isn't the work of the court."
     mc "It is a tradition of us - the members of the court."
+    
+    show other angry
+    
     other "The winter weather is our main duty, we don't need to just stay at home and eat treats!"
+    
+    show mc angry
+    
     mc "Is working to the bone any better?"
     other "It's Long Night! The most important night of the year!"
     mc "How does that make it any better?"
@@ -43,11 +50,11 @@ label s1_catfight:
     mc "That isn't even- And your call, don't make interesting calls, is better?"
     other "Is respecting tradition supposed to be boring!"
     mc "Never changing is boring!"
-    show other:
+    show other furious:
         xcenter 0.65
     with move
     other "You crazy upstart!"
-    show mc:
+    show mc angry:
         xcenter 0.35
     with move
     mc "You old hag!"
