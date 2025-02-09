@@ -25,7 +25,7 @@ label s2_tutorial:
     menu:
         "Rant about (Blizzard)'s Views":
             mc "Slacking off, I made a three year reform plan because I'm lazy."
-            mc "As opposed to just doing it the same thing we always did. Except when we make things fancier."
+            mc "As opposed to just doing the same thing we always did. Except when we make things fancier."
             wife "That might be true, but..."
             jump s2_tutorial
         "Rant about (Blizzard)'s Approach":
@@ -51,7 +51,7 @@ label s2_main:
     wife "Even though I am not her biggest fan either, eventually you are both going to have to appologize to each other."
     wife "But what are you doing about the weather on Long Night?"
     mc "I suppose we are still on a clear night, but (Blizzard) probably isn't done trying to change that."
-    wife "Are you going to try and convnce her not too?"
+    wife "Are you going to try and convnce her not to?"
     mc "That is hard, we know what the difference is here. There is no surprise information about weather we are missing."
     mc "She just wants it for different reasons."
     mc "(Blizzard) is always excited about the tradition and ceremony of any event."
@@ -64,16 +64,16 @@ label s2_main:
     mc "But it seems that (Blizzard) is happy to do that."
     wife "That does sound like her."
     mc "I don't know how to convince her."
-    wife "You are going to have to try though, it is your responcibility."
+    wife "You are going to have to try though, it is your responsibility."
     mc "And if it doesn't work?"
-    wife "Isn't this your decision, unless the queen desides to step in."
+    wife "Isn't this your decision, unless the queen decides to step in."
     mc "I didn't talk to the queen."
     mc "I should go tell her what happened."
     mc "Maybe she can patch this up."
     wife "That would be nice."
     mc "Thanks for talking to me about it."
-    mc "Bye love,"
-    wife "Take care, my snowflake,"
+    mc "Bye love."
+    wife "Take care, my snowflake."
     jump s2_end
 
 label s2_end:
