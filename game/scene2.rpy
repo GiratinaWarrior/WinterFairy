@@ -36,10 +36,11 @@ label s2_start:
     jump s2_tutorial
 
 label s2_tutorial:
-    # This should be unlocked via the actual mechanism.
-    # Say how to do it in the text box.
-    $ important_comments["tut-comment"] = True
+    show screen make_important_comment("tut-comment")
     wife "Remember to focus when people are saying something important."
+    if "tut-comment" not in important_comments:
+        "(Press x to mark statements you think are important, they can open up new paths in the future.)"
+    hide screen make_important_comment
     wife "Just plowing ahead will not serve you well."
     menu:
         "Rant about Alyssa's Views":
@@ -53,6 +54,7 @@ label s2_tutorial:
             show mc annoyed
             mc "And she didn't bring anything up when I was assigned the weather this time."
             wife "It would have been good if she had done that. But..."
+            show mc
             jump s2_tutorial
         "Focus on what Lyra is saying." if "tut-comment" in important_comments:
             show mc sheepish
