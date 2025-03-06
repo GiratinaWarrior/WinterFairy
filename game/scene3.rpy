@@ -44,4 +44,4 @@ label s3_start:
     jump s3_end
 
 label s3_end:
-    jump test
+    jump s4_start
