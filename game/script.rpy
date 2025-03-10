@@ -22,18 +22,12 @@ define important_comments = {}
 
 # The game starts here.
 
-# mark_important(str) takes an arbitrary string and maps it to True on important_comments
-init python:
-    def mark_important(str):
-        #renpy.say(test_aelita, "bruh")
-        important_comments[str] = True
-
 # make_important_comment(str) is a screen that display a prompting overlay
 # indiciating that the X key (or any chosen key) can be pressed to continue
 # a conversation based on the last thing a character just said
 # used for when a character says something insightful that may give more information
 screen make_important_comment(str):
-    key 'K_x' action Function(mark_important, str)
+    key 'K_x' action SetDict(important_comments, str, True)
     imagebutton:
         auto "EmptyButton_%s.png"
 
@@ -87,9 +81,10 @@ label start:
 
     jump s1_start
 
-    # display the background, can be changed at any point
-    scene room
+# Here is an example of how to use the make_important_comment screen:
+label make_important_comment_example:
 
+    scene black
 
     show mc at left
     with dissolve
@@ -118,10 +113,6 @@ label start:
         "A wonderous what now?" if NewOption in important_comments:
             jump test_option2
 
-    # This ends the game.
-
-    jump test
-
 label test_option1:
     "You selected option 1."
     jump s1_start
@@ -130,6 +121,5 @@ label test_option2:
     "You selected option 2."
     jump s1_start
 
-label test:
-
+label end_of_game:
     return

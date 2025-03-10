@@ -57,4 +57,4 @@ label s4_start:
     jump s4_end
 
 label s4_end:
-    jump test
+    jump s5_start
